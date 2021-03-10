@@ -1,0 +1,47 @@
+hw2_1
+//Convert Miles to Kilometers.
+//You should give an input of miles, and computer will output the kilometers.
+//The fomula is:1mile=1.6 kilometers.
+//E.g., input 2 miles, will get 3.2 kilometers.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+     int miles;
+     double kilometers;
+     cout << "Enter a number in miles:";
+     cin >> miles;
+     kilometers = miles * 1.6;
+     cout << "In kilometers that is:" << kilometers << endl;
+     
+     return 0;
+}
+
+
+hw2_2
+//Convert KB to GB and MG, and how many KB remains after.
+//Formula:1GB=1000MB,1MB=1000KB.
+//E.g.,input 20666869KB will give 20GB, 666MB, 869KB left.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "How many GB and MB are there, and how many KB remains?\n";
+    cin >> n;
+    int g,m,k; // GB, MB, KB remains.
+
+    g = n / 1000000;
+    n = n % 1000000;
+    m = n / 1000;
+    k = n % 1000;
+
+    cout << "GB:" << g << "\nMB:" << m << "\nKB remains:" << k << endl;
+
+    return 0;
+}
+
+

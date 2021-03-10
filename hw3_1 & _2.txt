@@ -1,0 +1,65 @@
+
+//hw3_1
+int main()
+{
+	int firstNum = 0, secondNum = 0;
+	cout << "Enter two numbers and press ENTER:";
+	cin >> firstNum >> secondNum;
+
+    while (firstNum <= 0|| secondNum <= 0) {
+		cout << "Enter another two bigger number.";
+		cin >> firstNum >> secondNum;
+	}
+
+
+	int gcd;
+
+	for (int d = 1; d <= firstNum && d <= secondNum; d++) {
+		if (firstNum % d == 0 && secondNum % d == 0)
+			gcd = d;
+	}
+	cout << gcd << endl;
+		
+
+    return 0;
+}
+
+
+
+//hw3_2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int odd = 0;
+	cout << "Enter an odd number and press ENTER:";
+	cin >> odd;
+	while (odd % 2 == 0) {
+		cout << "Oops! It's not an odd number, enter another one and press ENTER." << endl;
+		cin >> odd;
+	}
+
+	int a, b, s;
+	for ( a = 1; a <= odd; a++) {
+		for (b = odd - a; b >= 1; b--) {
+			cout << " ";
+		} 
+		for (s = 1; s <= 2 * a - 1; s++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	
+	for (a = odd - 1; a >= 1; a--) {
+		for (b = 1; b <= odd - a; b++) {
+			cout << " ";
+		} 
+		for (s = 1; s <= 2 * a - 1; s++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+return 0;
+}

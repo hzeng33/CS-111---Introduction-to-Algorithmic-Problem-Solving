@@ -1,0 +1,7 @@
+Homework 4
+Due: 11:59pm, April 6, 2015
+
+1.Write a function Fibonacci (int n) which calculates the nth Fibonacci number. Write a main program that uses this function and another function which is used to test if a number is prime or not to print out the first 5 Fibonacci numbers that are also primes. 
+
+2.Write a function max3 which uses 3 parameters and returns the value of the largest. Test the function in a program that determines the largest of 3 numbers. 
+
